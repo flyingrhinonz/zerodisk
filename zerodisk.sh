@@ -17,7 +17,7 @@ set -o errexit      # Exit when a command fails
 set -o pipefail     # Capture and crash when pipes failed anywhere in the pipe
 
 
-declare -r ScriptVersion="ZeroDisk script v1.1.0 , 2022-05-29 , by Kenneth Aaron"
+declare -r ScriptVersion="ZeroDisk script v1.1.1 , 2022-05-29 , by Kenneth Aaron"
 
 declare -r ProcID="$(echo $$)"          # Script process ID for logging purposes
     # ^ Script process ID for logging purposes
@@ -77,9 +77,9 @@ LogWrite info "Fields explained: PID: Script PID , MN: Module (script) Name , FN
 
 # Setup variables here:
 
-declare InfoOnly="true"
+declare InfoOnly="false"
     # ^ Display info only - without actually zeroing anything
-declare -a ExcludePaths=( "/share" "/nfs" )
+declare -a ExcludePaths=()
     # ^ An array of paths to exclude from the zeroing process
     #       Eg: declare -a ExcludePaths=( "/share" "/nfs" )
 

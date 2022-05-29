@@ -18,7 +18,7 @@ See the GNU General Public License for more details.
 
 # Manual install instructions
 
-* Copy:  **zerodisk.sh**   to : **/usr/local/bin/** .
+* Copy:  **zerodisk.sh**   to : **/usr/local/bin/**  and give it execute permissions.
 * Requires:  [rhinolib](https://github.com/flyingrhinonz/rhinolib_bash)  to run.
 
 
